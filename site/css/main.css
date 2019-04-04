@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.test{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+}
