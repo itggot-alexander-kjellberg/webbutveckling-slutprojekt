@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper{
@@ -44,10 +45,114 @@ main{
     margin: 0 3% 3% 3%;
 }
 
+.cirkelcontent:hover{
+    border-radius: 0;
+}
+
+.underkategori{
+
+}
+
+.nunna{
+    display: none;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+.burgercontainer{
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 150px;
+    position: inherit;
+    top: 30px;
+    left: 35px;
+    z-index: 10;
+}
+
+
+.burgarknappar{
+    height: 90px;
+    border-radius: 50%;
+    width: 90px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+
+.flytta{
+    position: inherit;
+    top: 100px;
+    left: 180px;
+    height: 110px;
+    width: 110px;
+}
+
+
+/* ---------------------Det som händer vid hover vill jag ska hända vid onclick */
+.flytta:hover{
+    padding: 8% 0 8% 0;
+    width: 110px;
+    height: 200px;
+    border-radius: 100px / 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.hammenu{
+    position: fixed;
+    z-index: 2;
+    top: -600px;
+    left: -800px;
+    background-color: orange;
+    height: 1200px;
+    width: 1200px;
+    border-radius: 50%;
+}
+
 footer{
-    margin-top: 106px;
+    padding-top: 20px;
+    position: inherit;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 8%;
     background-color: blue;
     -webkit-clip-path: ellipse(60% 99% at 50% 100%);
     clip-path: ellipse(60% 99% at 50% 100%);
-    height: 100px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
 }
+
+
