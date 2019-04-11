@@ -1,11 +1,12 @@
 body{
     margin: 0;
     font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3A6C99;
 }
 
 .wrapper{
     display: grid;
-    grid-template-rows: 120px auto auto;
+    grid-template-rows: 120px auto 180px;
 
 }
 
@@ -14,12 +15,26 @@ header{
     justify-content: space-between;
 }
 
+.hstyle .material-icons{
+    font-size: 50px;
+}
+
+.menu .material-icons{
+    font-size: 50px;
+    margin: 20% 0 0 20%;
+}
+
+
+.sok .material-icons{
+    font-size: 50px;
+    margin: 20% 0 0 40%;
+}
+
 .hstyle{
     height: 120px;
     width: 120px;
-    background-color: blue;
+    background-color: #006DCC;
     color: white;
-    /* VARFÖR KAN JAG INTE ÄMDRA FONT SIZE */
 }
 
 .menu{
@@ -30,7 +45,7 @@ header{
     border-bottom-left-radius: 100%;
 }
 
-main{
+.mainindex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -50,7 +65,7 @@ main{
 }
 
 .underkategori{
-
+    
 }
 
 .nunna{
@@ -110,13 +125,19 @@ main{
 
 /* ---------------------Det som händer vid hover vill jag ska hända vid onclick */
 .flytta:hover{
-    padding: 8% 0 8% 0;
+    padding: 13% 0 13% 0;
     width: 110px;
-    height: 200px;
+    height: 170px;
     border-radius: 100px / 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
+}
+.flytta div{
+    display: none;
+}
+.flytta:hover div{
+    display: block;
 }
 
 a{
@@ -128,10 +149,10 @@ a{
 
 .hammenu{
     position: fixed;
-    z-index: 2;
+    z-index: 100000000;
     top: -600px;
     left: -800px;
-    background-color: orange;
+    background-color: #CC6964;
     height: 1200px;
     width: 1200px;
     border-radius: 50%;
@@ -144,7 +165,7 @@ footer{
     left: 0;
     right: 0;
     margin-top: 8%;
-    background-color: blue;
+    background-color: #006DCC;
     -webkit-clip-path: ellipse(60% 99% at 50% 100%);
     clip-path: ellipse(60% 99% at 50% 100%);
     height: 160px;
@@ -155,4 +176,53 @@ footer{
     color: white;
 }
 
+.bild{
+    background-image: url(../img/prollebild.png);
+    height: 180px;
+    width: 180px;
+    margin-right: -18%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
 
+.abouttext{
+    background-color: aqua;
+    font-size: 20px;
+    margin-left: -18%;
+    height: 180px;
+    width: 180px;
+    -webkit-clip-path: polygon(99% 100%, 0 100%, 100% 0);
+    clip-path: polygon(99% 100%, 0 100%, 100% 0);
+    font-size: 17px;
+}
+
+.aboutmain{
+    display: flex;
+    justify-content: center;
+}
+
+.adidas{
+    z-index: 10000;
+    position: absolute;
+    right: 20%;
+}
+
+.text1{
+    top: 41%;
+}
+
+.text2{
+    top: 36%;
+}
+
+.text3{
+    top: 31%;
+}
+
+.text4{
+    top: 27%;
+}
+
+.footerabout{
+    margin-top: 44%;
+}
