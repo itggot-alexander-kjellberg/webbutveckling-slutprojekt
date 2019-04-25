@@ -1,7 +1,7 @@
 body{
     height: 100vh;
     margin: 0;
-    font-family: monospace, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #3A6C99;
 }
 
@@ -11,7 +11,13 @@ body{
 
 }
 
-header{
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hmobile{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -27,6 +33,8 @@ header{
 }
 
 .logo{
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
     background-color: black;
     color: white;
     height: 60%;
@@ -80,6 +88,10 @@ header{
 }
 
 .nunna{
+    display: none;
+}
+
+.logodesktop{
     display: none;
 }
 
@@ -237,7 +249,6 @@ footer{
 }
 
 @media only screen and (min-width : 900px){
-
 .wrapper{
     height: 100%;
     grid-template-rows: auto;
@@ -246,18 +257,14 @@ footer{
     "h m f";
 }
 
-header{
-    position: fixed;
+.hdesktop{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 360px;
-    height: 100%;
 }
 
 .mainindex{
     grid-area: m;
     justify-content: space-around;
+    padding-top: 40%;
 }
 
 footer{
@@ -280,8 +287,11 @@ footer{
 }
 
 .sok{
-    border-top-right-radius: 100%;
-    border-bottom-left-radius: 0;
+    display: none;
+}
+
+.menu{
+    display: none;
 }
 
 .cirkelcontent{
@@ -289,11 +299,29 @@ footer{
     width: 220px;
 }
 
+.desktopnunna{
+    display: none;
+}
 
+.logodesktop{
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    display: flex;
+    position: absolute;
+    height: 150px;
+    width: 360px;
+    color: white;
+    background-color: black;
+    top: 10%;
+}
 
+.nunnaidesktop{
+    display: none;
+}
 
-
-
+.hmobile{
+    display: none;
+}
 
 
 
