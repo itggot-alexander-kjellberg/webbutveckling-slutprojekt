@@ -258,7 +258,33 @@ footer{
 }
 
 .hdesktop{
+    position: fixed;
+    background-color: #006DCC;
+    height: 100%;
+    width: 400px;
+}
+
+.containerdesktop{
+    background-color: rgb(66, 155, 233);
+    height: 92%;
+    width: 85%;
+    border-radius: 10%;
     display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+.headerdesktoptext{
+    color: white;
+    font-size: 40px;
+}
+
+.behollare{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .mainindex{
@@ -323,6 +349,29 @@ footer{
     display: none;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bild{
+    margin: 20% -40% 0 0;
+    height: 270px;
+    width: 270px;
+    background-color: blanchedalmond;
+    background-image: none;
+}
+
+.abouttext{
+    height: 270px;
+    width: 270px;
+    margin: 20% 0 0 -40%;
+}
+
+.aboutmain{
+    grid-area: m;
+}
 
 
 
