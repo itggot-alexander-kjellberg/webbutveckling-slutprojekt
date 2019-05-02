@@ -72,15 +72,19 @@ body{
 }
 
 .cirkelcontent{
+    background-color: black;
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    background-color: black;
-    margin: 0 3% 3% 3%;
+    margin: 0 10px 10px 10px;
 }
 
 .cirkelcontent:hover{
     border-radius: 0;
+}
+
+.cirkelcontent:nth-child(1){
+    background-image: url(../img/produkt_framsida@90x90.jpg);
 }
 
 .underkategori{
@@ -201,14 +205,16 @@ footer{
     background-image: url(../img/prollebild.png);
     height: 180px;
     width: 180px;
+    margin-top: 10%; 
     margin-right: -18%;
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 0);
     clip-path: polygon(0 0, 0 100%, 100% 0);
 }
 
 .abouttext{
-    background-color: aqua;
+    background-color: rgb(66, 155, 233);
     font-size: 20px;
+    margin-top: 10%;
     margin-left: -18%;
     height: 180px;
     width: 180px;
@@ -229,19 +235,19 @@ footer{
 }
 
 .text1{
-    top: 41%;
+    top: 48%;
 }
 
 .text2{
-    top: 36%;
+    top: 43%;
 }
 
 .text3{
-    top: 31%;
+    top: 37%;
 }
 
 .text4{
-    top: 27%;
+    top: 32%;
 }
 
 .footerabout{
@@ -321,8 +327,17 @@ footer{
 }
 
 .cirkelcontent{
+    margin: 0 10px 10% 10px;
     height: 220px;
     width: 220px;
+}
+
+.cirkelcontent:nth-child(1){
+    background-image: url(../img/produkt_framsida@220x220.jpg);
+}
+
+.cirkelcontent:nth-child(1):hover{
+    background-image: url(../img/produkt_baksida@220x220.jpg);
 }
 
 .desktopnunna{
@@ -356,22 +371,51 @@ footer{
 }
 
 .bild{
-    margin: 20% -40% 0 0;
+    margin: 40% -40% 0 0;
     height: 270px;
     width: 270px;
-    background-color: blanchedalmond;
+    background-color: rgb(66, 155, 233);
     background-image: none;
 }
 
 .abouttext{
     height: 270px;
     width: 270px;
-    margin: 20% 0 0 -40%;
+    margin: 40% 0 0 -40%;
+    background-image: url(../img/prolledesktop.png);
+    overflow: hidden;
 }
 
 .aboutmain{
     grid-area: m;
 }
+
+.nike{
+    display: block;
+    font-size: 26px;
+    position: absolute;
+    left: 52%;
+    z-index: 20000000;
+    color: white;
+}
+
+.dtext1{
+    top: 40%; 
+}
+
+.dtext2{
+    top: 46%;
+}
+
+.dtext3{
+    top: 53%;
+}
+
+.dtext4{
+    top: 60%;
+}
+
+
 
 
 
