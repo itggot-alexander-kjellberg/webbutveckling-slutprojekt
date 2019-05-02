@@ -87,10 +87,6 @@ body{
     background-image: url(../img/produkt_framsida@90x90.jpg);
 }
 
-.underkategori{
-    
-}
-
 .nunna{
     display: none;
 }
@@ -149,8 +145,6 @@ body{
     width: 110px;
 }
 
-
-/* ---------------------Det som händer vid hover vill jag ska hända vid onclick */
 .flytta:hover{
     padding: 13% 0 13% 0;
     width: 110px;
@@ -254,7 +248,33 @@ footer{
     margin-top: 44%;
 }
 
+.mainprodukt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produkt{
+    margin: 5% 0 0 0;
+    width: 280px;
+    height: 350px;
+    background-color: black;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produktcontainer{
+    display: flex;
+    flex-direction: row;
+    height: 340px;
+    width: 270px;
+    overflow-x: scroll;
+    max-width: 270px;
+}
+
 @media only screen and (min-width : 900px){
+
 .wrapper{
     height: 100%;
     grid-template-rows: auto;
@@ -354,6 +374,10 @@ footer{
     color: white;
     background-color: black;
     top: 10%;
+}
+
+.produktlogo{
+    left: 38%;
 }
 
 .nunnaidesktop{
