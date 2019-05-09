@@ -7,8 +7,7 @@ body{
 
 .wrapper{
     display: grid;
-    grid-template-rows: 120px auto 180px;
-    
+    grid-template-rows: 120px auto 180px;   
 }
 
 .center{
@@ -127,15 +126,16 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.2);
-    display: none;
-    z-index: 1;
+    pointer-events: none;
     height: 100%;
     width: 100%;
+    transition: 2s;
 }
 
 .fade-layer.visible{
-    display: block;
+    pointer-events: all;
+    transition-delay: 0.5s;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .burgercontainer{
@@ -144,10 +144,10 @@ body{
     justify-content: space-between;
     flex-direction: column;
     width: 150px;
-    position: inherit;
-    top: 30px;
-    left: 35px;
-    z-index: 10;
+    position: absolute;
+    bottom: 180px;
+    right: 230px;
+    z-index: 100000000000000000;
 }
 
 
@@ -196,11 +196,18 @@ a{
     position: fixed;
     z-index: 100000000;
     top: -600px;
-    left: -800px;
+    left: -1200px;
+    overflow: hidden;
     background-color: #CC6964;
     height: 1200px;
     width: 1200px;
     border-radius: 50%;
+    transition: 1s;
+}
+
+.delay{
+    left: -800px;
+    transition-delay: 0.5s;
 }
 
 footer{
@@ -421,9 +428,6 @@ footer{
     background-image: url(../img/karen@220x220.jpg);
 }
 
-
-
-
 .desktopnunna{
     display: none;
 }
@@ -518,10 +522,5 @@ footer{
 .dtext4{
     top: 60%;
 }
-
-
-
-
-
 
 }
