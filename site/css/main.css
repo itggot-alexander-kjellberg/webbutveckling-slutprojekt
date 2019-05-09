@@ -112,6 +112,26 @@ body{
     background-image: url(../img/karen@90x90.jpg);
 }
 
+.cirkelcontent:nth-child(6){
+    background-image: url(../img/napoleonplusalex@90x90.jpg);
+}
+
+.cirkelcontent:nth-child(7){
+    background-image: url(../img/fisk@90x90.jpg);
+}
+
+.cirkelcontent:nth-child(8){
+    background-image: url(../img/cer@90x90.jpg);
+}
+
+.cirkelcontent:nth-child(9){
+    background-image: url(../img/obunga@90x90.jpg);
+}
+
+.cirkelcontent:nth-child(10){
+    background-image: url(../img/girrreee@90x90.jpg);
+}
+
 .nunna{
     display: none;
 }
@@ -426,6 +446,22 @@ footer{
 
 .cirkelcontent:nth-child(5):hover{
     background-image: url(../img/karen@220x220.jpg);
+}
+
+.cirkelcontent:nth-child(6){
+    background-image: url(../img/napoleonplusalex@220x220.jpg);
+}
+
+.cirkelcontent:nth-child(7){
+    background-image: url(../img/obunga@220x220.jpg);
+}
+
+.cirkelcontent:nth-child(8){
+    background-image: url(../img/cer@220x220.jpg);
+}
+
+.cirkelcontent:nth-child(9){
+    background-image: url(../img/fisk@220x220.jpg);
 }
 
 .desktopnunna{
